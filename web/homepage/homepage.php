@@ -30,5 +30,7 @@
         <li><button onclick="window.location.href = '#';">Week 13</button></li>
         <li><button onclick="window.location.href = '#';">Week 14</button></li>
     </ul>
+
+    <div class="bottom"></div>
 </body>
 </html>

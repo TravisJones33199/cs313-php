@@ -46,3 +46,7 @@ ul li button:hover{
     font-size: medium;
     font-weight: bold;
 }
+
+.bottom {
+    padding: 40px 0px;
+}
