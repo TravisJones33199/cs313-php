@@ -12,6 +12,10 @@
     border-bottom: solid red 4px;
 }
 
+.main-header h2 {
+    padding-top: 15px;
+}
+
 ul {
     list-style-type: none;
 }
