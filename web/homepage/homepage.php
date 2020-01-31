@@ -11,7 +11,7 @@
     <div class="main-header">
         <h1 class="main-header">Travis Jones' Homepage</h1>
         <?php
-            echo getdate();
+            echo getdate().time();
         ?>
     </div>
     <ul>
