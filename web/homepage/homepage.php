@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="main-header">
-        <h1 class="main-header">Travis Jones' Homepage</h1>
+        <h1>Travis Jones' Homepage</h1>
         <?php
             echo date('m/d/Y H:i:s');;
         ?>
