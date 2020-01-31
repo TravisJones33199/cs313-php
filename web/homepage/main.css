@@ -24,19 +24,18 @@ ul li {
 ul li button{
     min-width: 125px;
     min-height: 40px;
-    border: solid red;
+    border: solid red 2px;
     border-radius: 30px;
     background-color: red;
     font-size: medium;
     font-weight: bold;
+    transition: .50s;
 }
 
 
 ul li button:hover{
     min-width: 150px;
-    min-height: 40px;
-    border: solid red;
-    border-radius: 30px;
+    border: solid red 2px;
     background-color: black;
     color: red;
     font-size: medium;
