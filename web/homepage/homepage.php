@@ -11,7 +11,7 @@
     <div class="main-header">
         <h1>Travis Jones' Homepage</h1>
         <?php
-            echo date('m/d/Y H:i:s');;
+            echo '<h2>'.date('m/d/Y H:i:s').'</h2>';
         ?>
     </div>
     <ul>
