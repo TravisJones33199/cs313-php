@@ -26,7 +26,7 @@ session_start();
     ?>
 
     <?
-    array_diff($_SESSION['cart'], $_POST['item'])
+    $_SESSION['cart']=array_diff($_SESSION['cart'], $_POST['item']);
     ?>
 </body>
 </html>
