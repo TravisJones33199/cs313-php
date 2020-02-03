@@ -24,7 +24,7 @@ session_start();
     </form>
 
     <?
-    $_SESSION['cart'] = $_POST["item"];
+    array_push($_SESSION['cart'], $_POST["item"]);
     ?>
 </body>
 </html>
