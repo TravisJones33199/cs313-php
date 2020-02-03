@@ -17,7 +17,7 @@
     <ul>
         <li><button onclick="window.location.href = '../hello.html';">Week 1</button></li>
         <li><button onclick="window.location.href = '#';">Week 2</button></li>
-        <li><button onclick="window.location.href = '#';">Week 3</button></li>
+        <li><button onclick="window.location.href = '../Week 3/shop.php';">Week 3</button></li>
         <li><button onclick="window.location.href = '#';">Week 4</button></li>
         <li><button onclick="window.location.href = '#';">Week 5</button></li>
         <li><button onclick="window.location.href = '#';">Week 6</button></li>
