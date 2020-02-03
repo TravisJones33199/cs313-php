@@ -26,7 +26,7 @@ session_start();
     ?>
 
     <?
-    echo array_search($_POST['item'], $_SESSION['cart']);
+    unset($_SESSION['cart'][array_search($_POST['item'], $_SESSION['cart'])]);
     ?>
 </body>
 </html>
