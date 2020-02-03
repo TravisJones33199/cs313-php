@@ -26,9 +26,7 @@ session_start();
     ?>
 
     <?
-    if (!empty($_POST['item'])) {
-        echo array_search($_POST['item'], $_SESSION['cart']);
-    }
+    array_diff($_SESSION['cart'], $_POST['item'])
     ?>
 </body>
 </html>
