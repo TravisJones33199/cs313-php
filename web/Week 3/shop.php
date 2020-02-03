@@ -20,11 +20,11 @@ if(!isset($_SESSION['cart'])) {
 
 
     <form method="post">
-        <button type="submit" name="item" value="Item 1">Item 1</button>
-        <button type="submit" name="item" value="Item 2">Item 2</button>
-        <button type="submit" name="item" value="Item 3">Item 3</button>
-        <button type="submit" name="item" value="Item 4">Item 4</button>
-        <button type="submit" name="item" value="Item 5">Item 5</button>
+        <button type="submit" name="item[]" value="Item 1">Item 1</button>
+        <button type="submit" name="item[]" value="Item 2">Item 2</button>
+        <button type="submit" name="item[]" value="Item 3">Item 3</button>
+        <button type="submit" name="item[]" value="Item 4">Item 4</button>
+        <button type="submit" name="item[]" value="Item 5">Item 5</button>
     </form>
 
     <?

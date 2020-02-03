@@ -17,7 +17,7 @@ session_start();
     if (!empty($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $x) {
             echo "<br>".$x."<form method='post'>
-            <button type='submit' name='item' value='".$x."'>Remove</button></form>";
+            <button type='submit' name='item[]' value='".$x."'>Remove</button></form>";
         }
     }
     else {
