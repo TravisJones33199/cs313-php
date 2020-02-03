@@ -19,8 +19,8 @@ if (!isset($_SESSION['cart'])) {
 
 
     <input type="button" name="item[]" value="Item 1" onclick=<?php array_push($_SESSION['cart'], $_POST['item']);
-                                                                print_r($_SESSION['cart']);?>>
+                                                                print_r($_SESSION['cart']);?>/>
    <input type="button" name="item[]" value="Item 2" onclick=<?php array_push($_SESSION['cart'], $_POST['item']);
-                                                                print_r($_SESSION['cart']);?>>
+                                                                print_r($_SESSION['cart']);?>/>
 </body>
 </html>
