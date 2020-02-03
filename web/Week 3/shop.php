@@ -23,7 +23,7 @@ if (!isset($_SESSION['cart'])) {
     </form>
 
     <?
-    array_push($_SESSION['cart'], $_POST['item'])
+    array_push($_SESSION['cart'], $_POST['item']);
 
     print_r($_SESSION['cart']);
     ?>
