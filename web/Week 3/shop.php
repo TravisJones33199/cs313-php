@@ -28,7 +28,7 @@ if(!isset($_SESSION['cart'])) {
     </form>
 
     <?
-    if (!empty($_POST["item"])) {
+    if ($_POST["item"] != 0) {
         array_push($_SESSION['cart'], $_POST["item"]);
     }
     ?>
