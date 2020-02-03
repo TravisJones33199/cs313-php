@@ -12,6 +12,8 @@ session_start();
 </head>
 <body>
     <h1>Cart</h1>
-    <?print_r($_SESSION['cart']);?>
+    <?foreach ($_SESSION['cart'] as $x) {
+        echo "<br>".$x;
+    }?>
 </body>
 </html>
