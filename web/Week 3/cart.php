@@ -12,8 +12,15 @@ session_start();
 </head>
 <body>
     <h1>Cart</h1>
-    <?foreach ($_SESSION['cart'] as $x) {
-        echo "<br>".$x[0];
-    }?>
+    <?
+    if (!empty($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $x) {
+            echo "<br>".$x[0];
+        }
+    }
+    else {
+        echo "Cart is empty";
+    }
+    ?>
 </body>
 </html>
