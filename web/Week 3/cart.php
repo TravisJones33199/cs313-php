@@ -16,9 +16,7 @@ session_start();
     <?
     if (!empty($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $x) {
-            if ($x[0] != 0) {
             echo "<br>".$x[0];
-            }
         }
     }
     else {
