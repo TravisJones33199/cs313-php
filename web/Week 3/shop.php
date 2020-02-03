@@ -1,9 +1,5 @@
 <?php
 session_start();
-
-if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = array();
-}
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +24,7 @@ if (!isset($_SESSION['cart'])) {
     </form>
 
     <?
-    array_push($_SESSION['cart'], $_POST['item']);
+    $_SESSION['cart'] = $_POST["item"];
     ?>
 </body>
 </html>
