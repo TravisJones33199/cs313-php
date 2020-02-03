@@ -13,7 +13,7 @@ session_start();
 <body>
     <h1>Cart</h1>
     <?foreach ($_SESSION['cart'] as $key => $value) {
-        echo "<br>".$value;
+        echo "<br>".$value.$key;
     }?>
 </body>
 </html>
