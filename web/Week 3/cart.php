@@ -12,6 +12,7 @@ session_start();
 </head>
 <body>
     <h1>Cart</h1>
+    <a href="shop.php">Shop</a>
     <?
     if (!empty($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $x) {
