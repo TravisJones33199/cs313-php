@@ -12,8 +12,8 @@ session_start();
 </head>
 <body>
     <h1>Cart</h1>
-    <?foreach ($_SESSION['cart'] as $key => $value) {
-        echo "<br>".$value[0].$key;
+    <?foreach ($_SESSION['cart'] as $x) {
+        echo "<br>".$value[0];
     }?>
 </body>
 </html>
