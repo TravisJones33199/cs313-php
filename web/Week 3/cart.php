@@ -27,7 +27,7 @@ session_start();
 
     <?
     if (!empty($_POST['item'])) {
-        $_SESSION['cart']=array_diff($_SESSION['cart'], $_POST['item']);
+        array_search($_POST['item'], $_SESSION['cart']);
     }
     ?>
 </body>
