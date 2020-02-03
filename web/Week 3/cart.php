@@ -1,4 +1,5 @@
 <?php
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -11,5 +12,6 @@
 </head>
 <body>
     <h1>Cart</h1>
+    <?echo $_SESSION['cart'];?>
 </body>
 </html>
