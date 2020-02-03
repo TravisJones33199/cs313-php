@@ -18,9 +18,9 @@ if (!isset($_SESSION['cart'])) {
     <h1>Shop</h1>
 
 
-    <input type="button" name="item[]" value="Item 1" onclick=<?php array_push($_SESSION['cart'], $_POST['item']);
+    <input type="button" name="item[]" value="Item 1" onclick=<? array_push($_SESSION['cart'], $_POST['item']);
                                                                 print_r($_SESSION['cart']);?>/>
-   <input type="button" name="item[]" value="Item 2" onclick=<?php array_push($_SESSION['cart'], $_POST['item']);
+   <input type="button" name="item[]" value="Item 2" onclick=<? array_push($_SESSION['cart'], $_POST['item']);
                                                                 print_r($_SESSION['cart']);?>/>
 </body>
 </html>
