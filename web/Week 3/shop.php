@@ -32,6 +32,7 @@ if(!isset($_SESSION['cart'])) {
     if (!empty($_POST["item"])) {
 
         foreach ($_SESSION['cart'] as $x) {
+            echo $x[0]."Is already in cart";
             if ($x[0] == $_POST["item"]) {
                 echo $x[0]."Is already in cart";
                 return;
