@@ -16,8 +16,8 @@ session_start();
     <?
     if (!empty($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $x) {
-            echo "<br>".$x."<form method='post'>
-            <button type='submit' name='item[]' value='".$x."'>Remove</button></form>";
+            echo "<br>".$x[0]."<form method='post'>
+            <button type='submit' name='item[]' value='".$x[0]."'>Remove</button></form>";
         }
     }
     else {
@@ -26,7 +26,7 @@ session_start();
     ?>
 
     <?
-    array_diff($_SESSION['cart'], $_POST['item']);
+    $_SESSION['cart'] = array_diff($_SESSION['cart'], $_POST['item']);
     ?>
 </body>
 </html>
