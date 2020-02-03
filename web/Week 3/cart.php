@@ -12,6 +12,6 @@ session_start();
 </head>
 <body>
     <h1>Cart</h1>
-    <?echo $_SESSION['cart'][0][1];?>
+    <?print_r($_SESSION['cart']);?>
 </body>
 </html>
