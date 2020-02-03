@@ -27,10 +27,22 @@ if(!isset($_SESSION['cart'])) {
         <button type="submit" name="item[]" value="Item 5">Item 5</button>
     </form>
 
+    <div class="error">
     <?
     if (!empty($_POST["item"])) {
+
+        foreach ($_SESSION['cart'] as $x) {
+            if ($x[0] == $_POST["item"]) {
+                echo $x[0]."Is already in cart";
+                return;
+            }
+        }
+
         array_push($_SESSION['cart'], $_POST["item"]);   
     }
     ?>
+    </div>
+
+    
 </body>
 </html>
